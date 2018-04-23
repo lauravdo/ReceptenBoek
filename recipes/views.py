@@ -16,7 +16,7 @@ def index(request):
 
 def name(request, recipe_name):
     response = "You're looking at recipe %s"
-    return HttpResponse(response % recipe)
+    return HttpResponse(response % recipe_name)
 
 # def category(request, recipe_category)
 #     response = "You're looking at category %s"
