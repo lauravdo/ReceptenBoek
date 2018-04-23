@@ -14,9 +14,9 @@ def index(request):
 
     return HttpResponse(template.render(context,request))
 
-def detail(request, recipe_name):
+def name(request, recipe_name):
     response = "You're looking at recipe %s"
-    return HttpResponse(response % recipe_name)
+    return HttpResponse(response % recipe)
 
 # def category(request, recipe_category)
 #     response = "You're looking at category %s"
